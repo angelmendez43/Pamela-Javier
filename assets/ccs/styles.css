@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,700&display=swap');
+
+html, body, div, h1, h2, p, img {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Playfair Display', serif;
+  }
+  
+@keyframes fall {
+  0% {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.fall-animation {
+  opacity: 0; 
+  animation: fall 1.5s ease forwards;
+}
+
+
