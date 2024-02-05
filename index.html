@@ -6,11 +6,11 @@
 <title>Invitación de Boda</title>
 <script src="https://cdn.tailwindcss.com"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-<link rel="stylesheet" href="assets/ccs/styles.css">
+<link rel="stylesheet" href="assets/css/styles.css">
 </head>
-<body class="bg-gradient-to-b from-gray-50 to-gray-200">
+<body>
 
-<div class="min-h-screen flex flex-col items-center justify-center p-5">
+<div class="">
   <div class="fall-animation" style="animation-delay: 0.5s;">
     <img src="assets/images/floral-decoration.png" alt="Floral decoration for wedding invitation" class="mx-auto">
   </div>
@@ -32,13 +32,58 @@
     </div>
 
     <div class="fall-animation" style="animation-delay: 1.5s;">
-        <img src="assets/images/leafy-branch.png" alt="Leafy branch decoration" class="mx-auto my-5">
+        <img src="assets/images/leafy-branch.png" alt="Leafy branch decoration" class="rotate-180 mx-auto my-5">
       </div>
 
-      
+
   </div>
 </div>
 
+<div class="text-center my-10 fall-animation" style="animation-delay: 1.5s;">
+    <div class="date">
+      27  |  Abril  |  2024
+    </div>
+    <div class="countdown-bg text-gray-800 py-2 px-6 inline-block mt-5">
+      <div id="countdown" class="flex justify-center">
+        <div class="countdown-item">
+          <span id="days" class="countdown-number">82</span>
+          <span class="countdown-label">Días</span>
+        </div>
+        <div class="countdown-item">
+          <span id="hours" class="countdown-number">05</span>
+          <span class="countdown-label">Hrs.</span>
+        </div>
+        <div class="countdown-item">
+          <span id="minutes" class="countdown-number">28</span>
+          <span class="countdown-label">Min.</span>
+        </div>
+        <div class="countdown-item">
+          <span id="seconds" class="countdown-number">25</span>
+          <span class="countdown-label">Seg.</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+  
+ <!-- Carrusel de imágenes -->
+<div class="carousel mx-auto my-10 fall-animation" style="animation-delay: 1.5s; max-width: 700px; overflow: hidden;">
+    <div class="carousel-inner" style="display: flex;">
+      <img src="assets/images/img2.jpg" alt="Imagen 2" class="carousel-item">
+      <img src="assets/images/img3.jpg" alt="Imagen 3" class="carousel-item">
+    </div>
+    <a class="carousel-control-prev" onclick="moveSlide(-1)" aria-label="Anterior">&#10094;</a>
+    <a class="carousel-control-next" onclick="moveSlide(1)" aria-label="Siguiente">&#10095;</a>
+    <div class="carousel-indicators">
+      <span class="indicator" onclick="currentSlide(1)"></span>
+      <span class="indicator" onclick="currentSlide(2)"></span>
+      <span class="indicator" onclick="currentSlide(3)"></span>
+    </div>
+  </div>
+  
+  
+<script src="assets/js/countdown.js"></script>
 <script src="assets/js/script.js"></script>
 
 </body>
