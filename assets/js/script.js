@@ -51,3 +51,10 @@ document.addEventListener('DOMContentLoaded', () => {
     plusSlides(n);
   }
   
+
+
+  function confirmAssistance(phone) {
+    var numInvitados = document.getElementById('numInvitados').value;
+    var message = encodeURIComponent("Hola confirmo mi asistencia con " + numInvitados + " invitados");
+    window.open("https://wa.me/" + phone + "?text=" + message, "_blank");
+  }

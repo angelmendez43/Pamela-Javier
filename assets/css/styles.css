@@ -143,7 +143,96 @@ html, body, div, h1, h2, p, img {
   background-color: #717171;
 }
 
+.branch-icon {
+  width: 64px; height: 22px;
+  background-image: url('https://placehold.co/64x22.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.countdown-date{
+  text-align: center;
+  border-radius: 0px; 
+  background-color:#FFF8F2;
+  width: 700px;
+  height: 200pxx;
+  font-size: 1.5rem;
+  
+}
 
+.block-google{
+  border-radius: 0px;
+  background-color: #FFF8F2;
+  max-width: 700px; 
+  height: 150px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.block-google-link {
+  display: block; /* Asegura que el enlace ocupe todo el bloque */
+  text-align: center; /* Centra el texto y el ícono */
+  color: inherit; /* Mantiene el color del texto igual al del resto del bloque */
+}
+
+.block-google-link i {
+  display: block; /* Hace que el ícono se centre correctamente */
+  margin: 0 auto; /* Centra el ícono horizontalmente */
+}
+
+.custom-button {
+  background-color: #FFF8F2;
+  padding: 10px;
+  margin: 10px 0;
+  text-align: center;
+  border-radius: 0;
+  width: 700px;
+  height: 115px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.custom-icon {
+  font-size: 32px;
+}
+
+.my-4 {
+  text-align: center; /* Centra el texto y los elementos */
+  
+}
+
+.title h2 {
+  margin-bottom: 15px;
+  background-color: #FFF8F2; 
+  width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+.address {
+  margin-bottom: 20px; /* Espacio entre la dirección y el enlace de Waze */
+}
+
+.waze-link {
+  display: inline-block; /* Hace que el ícono y el texto se alineen correctamente */
+  text-decoration: none; /* Opcional: elimina el subrayado del enlace */
+  color: inherit; /* Opcional: hereda el color del texto del elemento padre */
+}
+
+.waze-content {
+  display: flex; /* Alinea horizontalmente el ícono y el texto */
+  align-items: center; /* Centra el ícono y el texto verticalmente */
+  justify-content: center; /* Centra el contenido dentro del enlace */
+}
+
+.fas.fa-map-marker-alt {
+  margin-right: 8px; /* Espacio entre el ícono y el texto */
+}
+
+.espacios {
+  margin-top: 80px; /* Espacio arriba del bloque */
+}
 /* Pantallas pequeñas (teléfonos móviles) */
 @media (max-width: 600px) {
   .carousel, .countdown-bg {

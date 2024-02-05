@@ -1,90 +1,197 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Invitación de Boda</title>
-<script src="https://cdn.tailwindcss.com"></script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-<link rel="stylesheet" href="assets/css/styles.css">
-</head>
-<body>
+    <!DOCTYPE html>
+    <html lang="es">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invitación de Boda</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    </head>
+    <body>
 
-<div class="">
-  <div class="fall-animation" style="animation-delay: 0.5s;">
-    <img src="assets/images/floral-decoration.png" alt="Floral decoration for wedding invitation" class="mx-auto">
-  </div>
-
-  <div class="text-center mt-5">
-    <div class="fall-animation" style="animation-delay: 1s;">
-      <p class="text-gray-600 font-serif text-lg">HA LLEGADO NUESTRO MOMENTO...</p>
-      <p class="text-gray-600 font-serif text-2xl mt-2">¡NOS CASAMOS!</p>
+    <div class="">
+    <div class="fall-animation" style="animation-delay: 0.5s;">
+        <img src="assets/images/floral-decoration.png" alt="Floral decoration for wedding invitation" class="mx-auto">
     </div>
 
+    <div class="text-center mt-5">
+        <div class="fall-animation" style="animation-delay: 1s;">
+        <p class="text-gray-600 font-serif text-lg">HA LLEGADO NUESTRO MOMENTO...</p>
+        <p class="text-gray-600 font-serif text-2xl mt-2">¡NOS CASAMOS!</p>
+        </div>
+
+        <div class="fall-animation" style="animation-delay: 1.5s;">
+        <img src="assets/images/leafy-branch.png" alt="Leafy branch decoration" class="mx-auto my-5">
+        </div>
+
+        <div class="fall-animation" style="animation-delay: 2s;">
+        <p class="text-gray-800 font-serif text-4xl">PAMELA NORIEGA</p>
+        <p class="text-yellow-600 font-serif text-2xl mt-2">— & —</p>
+        <p class="text-gray-800 font-serif text-4xl">JAVIER URIZAR</p>
+        </div>
+
+        <div class="fall-animation" style="animation-delay: 1.5s;">
+            <img src="assets/images/leafy-branch.png" alt="Leafy branch decoration" class="rotate-180 mx-auto my-5">
+        </div>
+
+
+    </div>
+    </div>
+
+    <div class="text-center my-10 fall-animation" style="animation-delay: 1.5s;">
+        <div class="date">
+        27  |  Abril  |  2024
+        </div>
+        <div class="countdown-bg text-gray-800 py-2 px-6 inline-block mt-5">
+        <div id="countdown" class="flex justify-center">
+            <div class="countdown-item">
+            <span id="days" class="countdown-number">82</span>
+            <span class="countdown-label">Días</span>
+            </div>
+            <div class="countdown-item">
+            <span id="hours" class="countdown-number">05</span>
+            <span class="countdown-label">Hrs</span>
+            </div>
+            <div class="countdown-item">
+            <span id="minutes" class="countdown-number">28</span>
+            <span class="countdown-label">Min</span>
+            </div>
+            <div class="countdown-item">
+            <span id="seconds" class="countdown-number">25</span>
+            <span class="countdown-label">Seg</span>
+            </div>
+        </div>
+        </div>
+    </div>
+    
+    
+    
+    <!-- Carrusel de imágenes -->
+    <div class="carousel mx-auto my-10 fall-animation" style="animation-delay: 1.5s; max-width: 700px; overflow: hidden;">
+        <div class="carousel-inner" style="display: flex;">
+        <img src="assets/images/img2.jpg" alt="Imagen 2" class="carousel-item">
+        <img src="assets/images/img3.jpg" alt="Imagen 3" class="carousel-item">
+        </div>
+        <a class="carousel-control-prev" onclick="moveSlide(-1)" aria-label="Anterior">&#10094;</a>
+        <a class="carousel-control-next" onclick="moveSlide(1)" aria-label="Siguiente">&#10095;</a>
+        <div class="carousel-indicators">
+        <span class="indicator" onclick="currentSlide(1)"></span>
+        <span class="indicator" onclick="currentSlide(2)"></span>
+        <span class="indicator" onclick="currentSlide(3)"></span>
+        </div>
+    </div>
+    
+
+    <div class="text-center p-8  fall-animation" style="animation-delay: 1.5s;">
+        <div class="fall-animation" style="animation-delay: 1.5s;">
+            <img src="assets/images/leafy-branch.png" alt="Leafy branch decoration" class="mx-auto my-5">
+        </div>
+
+        <p class="text-sm uppercase mb-2 tracking-widest">Junto a nuestros padres:</p>
+        <p class="text-3xl font-bold">Silvia Martínez & Roberto González</p>
+        <p class="text-xl my-2">—</p>
+        <p class="text-3xl font-bold">Irma Méndez & José Aguilar</p>
+
+        <p class="text-sm mt-8 mb-2">Queremos invitarte a compartir el día de nuestro boda.</p>
+
+        <div class="fall-animation" style="animation-delay: 1.5s;">
+            <img src="assets/images/leafy-branch.png" alt="Leafy branch decoration" class="mx-auto my-5">
+        </div>
+
+        <div class="countdown-date mx-auto ">
+        <p>— Fecha —</p>
+        </div>
+        
+        <p class="text-2xl font-bold my-2">Sábado</p>
+        <p class="text-3xl font-bold">27 de Abril de 2024</p>
+        <p class="text-xl my-2">—</p>
+        <p class="text-2xl font-bold">16:30 HRS</p>
+    </div>
+
+
+
+   
+  <div class="text-center p-8  fall-animation" style="animation-delay: 1.5s;">
     <div class="fall-animation" style="animation-delay: 1.5s;">
-      <img src="assets/images/leafy-branch.png" alt="Leafy branch decoration" class="mx-auto my-5">
+        <img src="assets/images/leafy-branch.png" alt="Leafy branch decoration" class="mx-auto my-5">
     </div>
 
-    <div class="fall-animation" style="animation-delay: 2s;">
-      <p class="text-gray-800 font-serif text-4xl">PAMELA NORIEGA</p>
-      <p class="text-yellow-600 font-serif text-2xl mt-2">— & —</p>
-      <p class="text-gray-800 font-serif text-4xl">JAVIER URIZAR</p>
+    <div class="my-4 text-center block-google">
+        <!-- Todo el bloque es un enlace ahora -->
+        <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Boda+de+Pamela+y+Javier&details=Ceremonia+de+casamiento&location=Iglesia+San+Judas+Tadeo,+10+Calle+1-35+Zona+14&dates=20240427T163000Z/20240427T193000Z" target="_blank" class="text-lg block-google-link">
+            <!-- Icono de Google, más grande -->
+            <i class="fab fa-google fa-3x"></i> <!-- 'fa-3x' es una clase de FontAwesome para aumentar el tamaño -->
+            <div>
+                HAZ CLIC AQUÍ PARA AGENDAR<br>FECHA EN TU CALENDARIO DE GOOGLE
+            </div>
+        </a>
+    </div>
+    
+    <div class="espacios"></div>
+
+    <div class="my-4">
+        <div class="title">
+          <h2>Ceremonia</h2>
+        </div>
+        <div class="address">
+          Zona 11 de Mixco
+        </div>
+        <a href="https://www.waze.com/es-419/live-map/directions/club-campestre-la-montana-zona-6,-mixco?to=place.w.176554131.1765541307.501135" target="_blank" class="text-lg waze-link">
+          <div class="waze-content">
+            <img src="assets/images/waze.png" alt="Waze Icon" style="width: 40px; height: 40px;"><br> <!-- Asegúrate de reemplazar 'URL_DEL_ICONO_DE_WAZE' con la URL real del ícono -->
+          </div>
+          <div>HAZ CLIC AQUÍ PARA LLEGAR CON WAZE</div>
+        </a>
+    </div>
+    
+    <div class="espacios"></div>
+
+    <div class="my-4">
+        <div class="title">
+          <h2>Fiesta</h2>
+        </div>
+        <div class="address">
+          Zona 11 de Mixco
+        </div>
+        <a href="https://www.waze.com/es-419/live-map/directions/club-campestre-la-montana-zona-6,-mixco?to=place.w.176554131.1765541307.501135" target="_blank" class="text-lg waze-link">
+          <div class="waze-content">
+            <img src="assets/images/waze.png" alt="Waze Icon" style="width: 40px; height: 40px;"><br> <!-- Asegúrate de reemplazar 'URL_DEL_ICONO_DE_WAZE' con la URL real del ícono -->
+          </div>
+          <div>HAZ CLIC AQUÍ PARA LLEGAR CON WAZE</div>
+        </a>
     </div>
 
-    <div class="fall-animation" style="animation-delay: 1.5s;">
-        <img src="assets/images/leafy-branch.png" alt="Leafy branch decoration" class="rotate-180 mx-auto my-5">
+
+    <div class="text-center p-8">
+        <!-- Input for number of guests -->
+        <div class="mb-4">
+          <input type="number" id="numInvitados" placeholder="No. DE INVITADOS" class="border-2 border-gray-300 p-2 text-center">
+        </div>
+        <p class="mb-4">NO OLVIDES CONFIRMAR TU ASISTENCIA ANTES DEL 1ero DE NOVIEMBRE DANDO CLICK AQUÍ:</p>
+        <!-- Invitation links -->
+        <div class="flex justify-center space-x-4">
+          <!-- Phone 1 -->
+          <div class="text-center">
+            <a href="#" onclick="confirmAssistance('50241944900')" class="block">
+              <i class="fas fa-phone-volume fa-2x"></i>
+              <span class="block">INVITADOS DE OLIVIA</span>
+              <span>4040-5050</span>
+            </a>
+          </div>
+          <!-- Phone 2 -->
+          <div class="text-center">
+            <a href="#" onclick="confirmAssistance('+50255101030')" class="block">
+              <i class="fas fa-phone-volume fa-2x"></i>
+              <span class="block">INVITADOS DE FRANCISCO</span>
+              <span>4040-5050</span>
+            </a>
+          </div>
+        </div>
       </div>
+    
+    <script src="assets/js/countdown.js"></script>
+    <script src="assets/js/script.js"></script>
 
-
-  </div>
-</div>
-
-<div class="text-center my-10 fall-animation" style="animation-delay: 1.5s;">
-    <div class="date">
-      27  |  Abril  |  2024
-    </div>
-    <div class="countdown-bg text-gray-800 py-2 px-6 inline-block mt-5">
-      <div id="countdown" class="flex justify-center">
-        <div class="countdown-item">
-          <span id="days" class="countdown-number">82</span>
-          <span class="countdown-label">Días</span>
-        </div>
-        <div class="countdown-item">
-          <span id="hours" class="countdown-number">05</span>
-          <span class="countdown-label">Hrs.</span>
-        </div>
-        <div class="countdown-item">
-          <span id="minutes" class="countdown-number">28</span>
-          <span class="countdown-label">Min.</span>
-        </div>
-        <div class="countdown-item">
-          <span id="seconds" class="countdown-number">25</span>
-          <span class="countdown-label">Seg.</span>
-        </div>
-      </div>
-    </div>
-  </div>
-  
-  
-  
- <!-- Carrusel de imágenes -->
-<div class="carousel mx-auto my-10 fall-animation" style="animation-delay: 1.5s; max-width: 700px; overflow: hidden;">
-    <div class="carousel-inner" style="display: flex;">
-      <img src="assets/images/img2.jpg" alt="Imagen 2" class="carousel-item">
-      <img src="assets/images/img3.jpg" alt="Imagen 3" class="carousel-item">
-    </div>
-    <a class="carousel-control-prev" onclick="moveSlide(-1)" aria-label="Anterior">&#10094;</a>
-    <a class="carousel-control-next" onclick="moveSlide(1)" aria-label="Siguiente">&#10095;</a>
-    <div class="carousel-indicators">
-      <span class="indicator" onclick="currentSlide(1)"></span>
-      <span class="indicator" onclick="currentSlide(2)"></span>
-      <span class="indicator" onclick="currentSlide(3)"></span>
-    </div>
-  </div>
-  
-  
-<script src="assets/js/countdown.js"></script>
-<script src="assets/js/script.js"></script>
-
-</body>
-</html>
+    </body>
+    </html>
