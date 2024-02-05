@@ -55,6 +55,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function confirmAssistance(phone) {
     var numInvitados = document.getElementById('numInvitados').value;
-    var message = encodeURIComponent("Hola confirmo mi asistencia con " + numInvitados + " invitados");
+    var message = encodeURIComponent("Hola confirmo mi asistencia a tu boda con " + numInvitados + " invitados");
     window.open("https://wa.me/" + phone + "?text=" + message, "_blank");
   }
