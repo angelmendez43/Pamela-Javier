@@ -79,12 +79,17 @@ html, body, div, h1, h2, p, img {
   display: block;
 }
 
-.date{
-  font-size: 1.5rem; 
+.countdown-date {
+  text-align: center;
+  border-radius: 0px;
+  background-color: #FFF8F2;
+  width: 90%; /* Cambio a un porcentaje para mejorar la responsividad */
+  max-width: 700px; /* Mantiene un máximo que coincide con otros elementos */
+  margin: 20px auto; /* Centra el div en la pantalla */
+  font-size: 1.5rem; /* Tamaño inicial de la fuente */
+  padding: 10px 0; /* Añade algo de padding vertical */
   text-transform: uppercase;
-  
 }
-
 
 .carousel {
   position: relative;
@@ -235,47 +240,87 @@ html, body, div, h1, h2, p, img {
 }
 /* Pantallas pequeñas (teléfonos móviles) */
 @media (max-width: 600px) {
-  .carousel, .countdown-bg {
+  .carousel, .countdown-bg, .block-google, .custom-button, .title h2 {
     width: 100%;
     padding: 0 20px;
   }
 
   .carousel-inner, .carousel-item {
-    flex: 0 0 100%;
+    flex: 0 0 auto;
     max-width: 100%;
   }
 
-  .date, .countdown-number, .countdown-label {
+  .date, .countdown-number, .countdown-label, .text-lg, .text-2xl, .text-4xl {
     font-size: 1rem;
   }
 
-  .text-lg, .text-2xl, .text-4xl {
-    font-size: 1.25rem;
+  .block-google-link i {
+    font-size: 24px; /* Ajuste del tamaño del ícono */
+  }
+
+  .espacios {
+    margin-top: 40px; /* Espacio reducido */
+  }
+
+  .title h2, .address, .waze-content {
+    padding: 0; /* Ajuste para el padding */
+    margin: 0 auto; /* Centrado */
+    width: auto; /* Permite que el ancho se ajuste al contenido */
+  }
+
+  .countdown-date {
+    width: 95%; /* Permite que el div ocupe más espacio en pantallas pequeñas */
+    font-size: 1rem; /* Reduce el tamaño de la fuente para mejor legibilidad */
+    padding: 8px 0; /* Ajusta el padding para mantener proporciones */
   }
 }
+
 
 /* Pantallas medianas (tabletas) */
 @media (min-width: 601px) and (max-width: 1024px) {
-  .carousel, .countdown-bg {
+  .carousel, .countdown-bg, .block-google, .custom-button, .title h2 {
     width: 90%;
+    padding: 0 15px;
   }
 
-  .date, .countdown-number, .countdown-label {
+  .date, .countdown-number, .countdown-label, .text-lg, .text-2xl, .text-4xl {
     font-size: 1.25rem;
   }
 
-  .text-lg, .text-2xl, .text-4xl {
-    font-size: 1.5rem;
+  .block-google-link i {
+    font-size: 28px; /* Ajuste del tamaño del ícono para tabletas */
+  }
+
+  .espacios {
+    margin-top: 60px; /* Espacio ajustado para tabletas */
+  }
+
+  .countdown-date {
+    width: 90%; /* Opcional: Ajusta según necesidad, pero 90% suele funcionar bien */
+    font-size: 1.25rem; /* Ajusta el tamaño de la fuente si es necesario */
+    padding: 10px 0; /* Ajusta el padding si es necesario */
   }
 }
+
 
 /* Pantallas grandes (pantallas de escritorio) */
 @media (min-width: 1025px) {
-  .carousel, .countdown-bg {
-    max-width: 700px; /* Ajustar según sea necesario */
+  .carousel, .countdown-bg, .block-google, .custom-button, .title h2 {
+    max-width: 700px; /* Asegura un ancho máximo */
+    margin: 0 auto; /* Centra los elementos horizontalmente */
+    padding: 0 20px;
   }
 
-  .date, .countdown-number, .countdown-label {
-    font-size: 1.5rem;
+  .date, .countdown-number, .countdown-label, .text-lg, .text-2xl, .text-4xl {
+    font-size: 1.5rem; /* Aumenta el tamaño de la fuente para mejor legibilidad */
+  }
+
+  .block-google-link i {
+    font-size: 32px; /* Aumenta el tamaño del ícono para escritorios */
+  }
+
+  .espacios {
+    margin-top: 80px; /* Mayor espacio entre secciones para no sentirse apretado */
   }
 }
+
