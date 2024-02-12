@@ -1,6 +1,6 @@
 function updateCountdown() {
     const countdownElement = document.getElementById('countdown');
-    const weddingDate = new Date('April 27, 2024 00:00:00').getTime();
+    const weddingDate = new Date('April 20, 2024 00:00:00').getTime();
     const now = new Date().getTime();
     const difference = weddingDate - now;
   

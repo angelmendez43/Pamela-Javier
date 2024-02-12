@@ -215,6 +215,26 @@ html, body, div, h1, h2, p, img {
   font-size: 20px;
 }
 
+.info2 {
+  background-color: #FFFAF7; 
+  width: 700px;
+  justify-content: center;
+
+}
+
+.info3 {
+  background-color: #FFFAF7; 
+  width: 700px;
+  height: auto;
+  
+
+}
+.nota{
+width: 700px;
+text-align: center;
+}
+
+
 .address {
   margin-bottom: 20px; /* Espacio entre la dirección y el enlace de Waze */
 }
@@ -238,6 +258,49 @@ html, body, div, h1, h2, p, img {
 .espacios {
   margin-top: 80px; /* Espacio arriba del bloque */
 }
+/* Estilos para la modal */
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1000; 
+  padding-top: 100px; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgba(0,0,0,0.9);
+}
+
+.modal-content {
+  /* Estilos existentes */
+  width: 80%;
+  max-width: 700px;
+  /* Nuevos estilos para animación */
+  -webkit-transition: -webkit-transform 0.6s ease-in-out;
+  transition: transform 0.6s ease-in-out;
+  -webkit-transform: scale(0.5);
+  transform: scale(0.5);
+}
+
+
+.modal.show .modal-content {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+
 /* Pantallas pequeñas (teléfonos móviles) */
 @media (max-width: 600px) {
   .carousel, .countdown-bg, .block-google, .custom-button, .title h2 {
